@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-29T01:39:37.163Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="9poQa1ZfQFqfMNKxfFB9" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-29T04:19:26.074Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="59d2ZVu8cNxSo49LNSfI" version="24.2.1" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1050" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -254,6 +254,51 @@
         </mxCell>
         <mxCell id="9x-W5iKNOteX7X35HXdL-50" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="660" y="340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-58" value="Esquema Relacional;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="400" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-60" value="Usuário(&lt;u&gt;matricula&lt;/u&gt;, nome, endereco, email)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="420" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-61" value="Livro(&lt;u&gt;codigo&lt;/u&gt;, titulo, edicao)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="440" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-62" value="Autor(&lt;u&gt;codigo,&lt;/u&gt; nome, nacionalidade)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="460" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-64" value="Assunto(&lt;u&gt;codigo, nome&lt;/u&gt;)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="480" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-67" value="Pegar(codigo_livro, data_emprestimo, data_devolucao, matricula)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="500" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-68" value="Reservar(codigo_livro, data_reserva, matricula)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="520" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-69" value="Escrever(codigo_livro, codigo_autor)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="560" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-70" value="Compõe(codigo_assunto,nome_assunto, assunto, sub-assunto)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="580" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-71" value="Classificar(codigo_assunto, nome_assunto, código_livro)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="540" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-72" value="matricula referencia usuario" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="600" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-73" value="codigo_livro referencia livro" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="620" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-74" value="codigo_autor referencia autor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="640" width="167.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-75" value="codigo_assunto referencia assunto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="660" width="197.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9x-W5iKNOteX7X35HXdL-76" value="nome_assunto referencia assunto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="680" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
